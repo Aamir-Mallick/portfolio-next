@@ -5,9 +5,9 @@ export const useStyles = makeStyles((theme) => ({
   aboutMainContainer: {
     position: "relative",
     top: "60px",
-    backgroundImage: `url("/main.jpg")`,
+
     height: "450px",
-    borderBottom: "5px solid black",
+    // borderBottom: "5px solid black",
     backgroundSize: "cover",
     color: "#ffffff",
     overflow: "auto",
@@ -15,13 +15,14 @@ export const useStyles = makeStyles((theme) => ({
   textContent: {
     display: "flex",
     // border: "5px solid black",
-    width: "600px",
+    // width: "600px",
     margin: "1rem auto",
     height: "400px",
+    justifyContent: "space-around",
   },
   textContentChild_1: {
     // border: "1px solid #ffffff",
-    flexGrow: 1,
+    // flexGrow: 1,
   },
   textContentChild_2: {
     // border: "1px solid #ffffff",

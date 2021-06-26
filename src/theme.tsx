@@ -13,8 +13,14 @@ const theme = createMuiTheme({
     error: {
       main: red.A400,
     },
-    background: {
-      default: "#060606",
+  },
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          backgroundImage: `url("/main.jpg")`,
+        },
+      },
     },
   },
 });

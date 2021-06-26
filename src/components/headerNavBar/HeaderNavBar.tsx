@@ -95,7 +95,7 @@ export const HeaderNavBar = () => {
   return (
     <>
       <Box className={`${showDropDown ? classes.main : ""}`}>
-        <AppBar color="primary">
+        <AppBar style={{ backgroundColor: "black" }}>
           <Toolbar className={`${classes.toolbarContainer}`}>
             {tabletAndDesktopViewNavbar()}
             {mobileViewNavbar()}
