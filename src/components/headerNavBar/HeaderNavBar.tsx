@@ -9,6 +9,7 @@ import {
   ListItemText,
   IconButton,
   Divider,
+  Link,
 } from "@material-ui/core";
 // import styles from "./container.module.css";
 
@@ -27,9 +28,27 @@ export const HeaderNavBar = () => {
           <Typography variant="h5">Protfolio</Typography>
         </Box>
         <Box className={classes.headerNavigationContainer}>
-          <Typography variant="body2">About</Typography>
-          <Typography variant="body2">Skill</Typography>
-          <Typography variant="body2">Projects</Typography>
+          <Typography variant="body2">
+            <Link style={{ color: "#ffffff" }} href="#about">
+              About
+            </Link>
+          </Typography>
+          <Typography variant="body2">
+            <Link style={{ color: "#ffffff" }} href="#skill">
+              {" "}
+              Skill
+            </Link>
+          </Typography>
+          <Typography variant="body2">
+            <Link style={{ color: "#ffffff" }} href="#project">
+              Projects
+            </Link>
+          </Typography>
+          <Typography variant="body2">
+            <Link style={{ color: "#ffffff" }} href="#contact">
+              Contact
+            </Link>
+          </Typography>
         </Box>
       </>
     );
@@ -44,11 +63,11 @@ export const HeaderNavBar = () => {
         <Box className={classes.navIcons}>
           {!showDropDown ? (
             <IconButton>
-              <DehazeIcon onClick={DropDown} />
+              <DehazeIcon style={{ color: "#ffffff" }} onClick={DropDown} />
             </IconButton>
           ) : (
             <IconButton>
-              <CloseIcon onClick={DropDown} />
+              <CloseIcon style={{ color: "#ffffff" }} onClick={DropDown} />
             </IconButton>
           )}
         </Box>
@@ -64,7 +83,15 @@ export const HeaderNavBar = () => {
             <ListItemText
               primary={
                 <Typography align="center" variant="body2">
-                  About
+                  <Link
+                    style={{ color: "#ffffff" }}
+                    href="#about"
+                    onClick={() => {
+                      setShowDropDown(false);
+                    }}
+                  >
+                    About
+                  </Link>
                 </Typography>
               }
             />
@@ -73,7 +100,15 @@ export const HeaderNavBar = () => {
             <ListItemText
               primary={
                 <Typography align="center" variant="body2">
-                  Skills
+                  <Link
+                    style={{ color: "#ffffff" }}
+                    href="#skill"
+                    onClick={() => {
+                      setShowDropDown(false);
+                    }}
+                  >
+                    Skill
+                  </Link>
                 </Typography>
               }
             />
@@ -82,7 +117,32 @@ export const HeaderNavBar = () => {
             <ListItemText
               primary={
                 <Typography align="center" variant="body2">
-                  Projects
+                  <Link
+                    style={{ color: "#ffffff" }}
+                    href="#project"
+                    onClick={() => {
+                      setShowDropDown(false);
+                    }}
+                  >
+                    Project
+                  </Link>
+                </Typography>
+              }
+            />
+          </ListItem>
+          <ListItem button>
+            <ListItemText
+              primary={
+                <Typography align="center" variant="body2">
+                  <Link
+                    style={{ color: "#ffffff" }}
+                    href="#contact"
+                    onClick={() => {
+                      setShowDropDown(false);
+                    }}
+                  >
+                    Contact
+                  </Link>
                 </Typography>
               }
             />

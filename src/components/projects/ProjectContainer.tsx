@@ -5,13 +5,11 @@ import { useStyles } from "./useStyles";
 export const ProjectContainer = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.root}>
+    <Box id="project" className={classes.root}>
       <Box>
         <Typography
           style={{
-            // border: "2px solid #A34F4F",
-            margin: "0rem 15rem",
-            backgroundColor: "#fff",
+            color: "#ffffff",
           }}
           variant="h4"
           align="center"
@@ -41,10 +39,18 @@ export const ProjectContainer = () => {
                   marginTop: "1rem",
                 }}
               >
-                <Button variant="outlined" color="primary" href="">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  href="https://naughty-wilson-7983d0.netlify.app/"
+                >
                   View
                 </Button>
-                <Button variant="outlined" color="primary">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  href="https://github.com/Aamir-Mallick/fodify-Application"
+                >
                   Git hub
                 </Button>
               </Box>
@@ -70,10 +76,18 @@ export const ProjectContainer = () => {
                   marginTop: "1rem",
                 }}
               >
-                <Button variant="outlined" color="primary">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  href="https://aamir-mallick.github.io/zomato-replica/"
+                >
                   View
                 </Button>
-                <Button variant="outlined" color="primary">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  href="https://github.com/Aamir-Mallick/zomato-replica"
+                >
                   Git hub
                 </Button>
               </Box>
@@ -81,6 +95,9 @@ export const ProjectContainer = () => {
           </Grid>
         </Grid>
         <Box>
+          <Typography variant="h4" align="center">
+            Client Project
+          </Typography>
           <Box
             style={{
               width: "250px",
@@ -91,21 +108,29 @@ export const ProjectContainer = () => {
             }}
           >
             <Box>
-              <img src={"../../../zomato.png"} width="220px" height="200px" />
+              <img
+                src={"../../../starweaver.png"}
+                width="220px"
+                height="200px"
+              />
             </Box>
             <Box
               style={{
                 display: "flex",
-                justifyContent: "space-around",
+                justifyContent: "center",
                 marginTop: "1rem",
               }}
             >
-              <Button variant="outlined" color="primary">
+              <Button
+                variant="outlined"
+                color="primary"
+                href="https://go.starweaver.com/on-air"
+              >
                 View
               </Button>
-              <Button variant="outlined" color="primary">
+              {/* <Button variant="outlined" color="primary">
                 Git hub
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </Box>

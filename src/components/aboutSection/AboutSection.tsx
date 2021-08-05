@@ -8,14 +8,20 @@ export const AboutSection = () => {
   const classes = useStyles();
   return (
     <>
-      <Box className={classes.aboutMainContainer}>
+      <Box id="about" className={classes.aboutMainContainer}>
         <Box className={classes.textContent}>
           <Box className={classes.textContentChild_1}>
             <Box style={{ width: "100px", margin: "0px auto" }}>
-              <IconButton color="inherit">
+              <IconButton
+                color="inherit"
+                href="https://github.com/Aamir-Mallick"
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="inherit">
+              <IconButton
+                color="inherit"
+                href="https://www.linkedin.com/in/aamir-mallick-b4b41a187/"
+              >
                 <LinkedInIcon />
               </IconButton>
             </Box>

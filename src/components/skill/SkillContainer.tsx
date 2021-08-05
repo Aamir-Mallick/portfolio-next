@@ -14,7 +14,7 @@ import DoneAllIcon from "@material-ui/icons/DoneAll";
 export const SkillContainer = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.skillMainContainer}>
+    <Box id="skill" className={classes.skillMainContainer}>
       <Box style={{ margin: "10px auto" }}>
         <Typography
           style={{

@@ -32,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   headerNavigationContainer: {
-    width: "200px",
+    width: "250px",
     display: "flex",
     justifyContent: "space-between",
     [theme.breakpoints.down("xs")]: {
