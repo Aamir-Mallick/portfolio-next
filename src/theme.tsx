@@ -5,7 +5,7 @@ import red from "@material-ui/core/colors/red";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#0B0A0A",
     },
     secondary: {
       main: "#19857b",
@@ -13,8 +13,14 @@ const theme = createMuiTheme({
     error: {
       main: red.A400,
     },
-    background: {
-      default: "#fff",
+  },
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          backgroundImage: `url("/main.jpg")`,
+        },
+      },
     },
   },
 });
